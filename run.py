@@ -7,8 +7,20 @@ app = Flask(__name__)
 
 
 @app.route('/')
-def index():
-    return render_template("index1.html")
+def index_page():
+    return render_template("index_page.html")
+    
+@app.route('/game')
+def game_page():
+    return render_template("game_page.html")
+    
+@app.route('/score')
+def score_page():
+    return render_template("score_page.html")
+    
+@app.route('/contact')
+def contact_page():
+    return render_template("contact_page.html")
 
 
 
